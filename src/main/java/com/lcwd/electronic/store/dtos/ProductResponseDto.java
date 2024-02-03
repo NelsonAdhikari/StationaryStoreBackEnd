@@ -1,0 +1,21 @@
+package com.lcwd.electronic.store.dtos;
+
+import lombok.Data;
+
+import java.util.Date;
+
+@Data
+public class ProductResponseDto {
+    private String productId;
+    private String title;
+    private String description;
+    private int price;
+    private int discountedPrice;
+    private int quantity;
+    private Date addedDate;
+    private boolean live;
+    private boolean stock;
+    private String productImageName;
+    private int productSold;
+    private CategoryDto category;
+}
